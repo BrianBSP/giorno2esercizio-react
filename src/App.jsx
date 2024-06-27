@@ -5,7 +5,7 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
-import SingleBook from "./components/SingleBook";
+/* import SingleBook from "./components/SingleBook"; */
 import BookList from "./components/BookList";
 /* import AllMyBooks from "./components/AllTheBooks"; */
 
@@ -15,8 +15,8 @@ function App() {
       <MyNav />
       <Welcome />
       {/* <AllMyBooks /> */}
-      <SingleBook bookTitle={fantasy[0]} />
-      <BookList bookTitle={fantasy} />
+      {/* <SingleBook book={fantasy[0]} /> */}
+      <BookList books={fantasy} />
       <MyFooter />
     </div>
   );
