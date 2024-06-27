@@ -9,14 +9,14 @@ const SingleBook = (props) => {
   //console.log(props.bookTitle.title);
   return (
     <Container>
-      <Row>
-        <Col>
+      <Row className="justify-content-center">
+        <Col md={10} lg={8}>
           <Card>
             <Card.Img variant="top" src={props.bookTitle.img} />
             <Card.Body>
               <Card.Title>{props.bookTitle.title}</Card.Title>
               <Card.Text>Category: {props.bookTitle.category}</Card.Text>
-              <Badge bg="dark">{props.bookTitle.price}</Badge>
+              <Badge bg="dark">€ {props.bookTitle.price}</Badge>
               <Button variant="primary">Buy</Button>
             </Card.Body>
           </Card>

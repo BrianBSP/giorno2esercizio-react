@@ -19,7 +19,7 @@ const AllMyBooks = () => {
                 <Card.Body>
                   <Card.Title>{book.title}</Card.Title>
                   <Card.Text>Category: {book.category}</Card.Text>
-                  <Badge bg="dark">{book.price}</Badge>
+                  <Badge bg="dark">€ {book.price}</Badge>
                   <Button variant="primary">Buy</Button>
                 </Card.Body>
               </Card>
