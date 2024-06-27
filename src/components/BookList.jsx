@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import SingleBook from "./SingleBook";
 import { Col, Form } from "react-bootstrap";
+import CommentArea from "./CommentArea";
 
 class BookList extends Component {
   //console.log(props.books);
@@ -14,7 +15,7 @@ class BookList extends Component {
   render() {
     return (
       <Container>
-        <Row className="justify-content-center mb-3">
+        <Row className="justify-content-center my-3">
           <Col md={6} lg={3} xl={2}>
             <Form.Group>
               <Form.Control
@@ -38,6 +39,7 @@ class BookList extends Component {
                 </Col>
               );
             })}
+          <CommentArea />
         </Row>
       </Container>
     );

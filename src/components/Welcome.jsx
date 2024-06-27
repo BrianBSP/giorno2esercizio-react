@@ -9,7 +9,7 @@ const Welcome = () => {
     return (
       <Row className="justify-content-center">
         <Col md={6}>
-          <Alert variant="success" onClose={() => setShow(false)} dismissible>
+          <Alert className="mb-0" variant="success" onClose={() => setShow(false)} dismissible>
             <Alert.Heading>Benvenuto su EPIC Book!</Alert.Heading>
             <p>Qui potrai trovare i tuoi libri preferiti.</p>
           </Alert>
