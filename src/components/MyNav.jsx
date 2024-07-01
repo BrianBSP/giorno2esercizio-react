@@ -2,10 +2,9 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-
 const MyNav = () => {
-    return(
-        <Navbar expand="lg" className="bg-body-tertiary">
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">EPIC Book</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -14,12 +13,11 @@ const MyNav = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">Aboout</Nav.Link>
             <Nav.Link href="#browse">Browse</Nav.Link>
-            
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    )
-}
+  );
+};
 
-export default MyNav
+export default MyNav;
